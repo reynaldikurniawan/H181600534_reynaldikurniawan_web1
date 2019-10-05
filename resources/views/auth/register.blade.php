@@ -40,6 +40,20 @@
                         </div>
 
                         <div class="form-group row">
+                            <label for="kontak" class="col-md-4 col-form-label text-md-right">{{ __('kontak') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="kontak" type="text" class="form-control @error('kontak') is-invalid @enderror" name="kontak" value="{{ old('kontak') }}" required autocomplete="kontak">
+
+                                @error('kontak')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
                             <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
 
                             <div class="col-md-6">
@@ -58,20 +72,6 @@
 
                             <div class="col-md-6">
                                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <label for="No.HP" class="col-md-4 col-form-label text-md-right">{{ __('No.HP') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="No.HP" type="text" class="form-control @error('No.HP') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
-
-                                @error('name')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
                             </div>
                         </div>
 

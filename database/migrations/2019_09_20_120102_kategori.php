@@ -30,6 +30,6 @@ class Kategori extends Migration
      */
     public function down()
     {
-        $chema::drop('kategori');
+        $chema::drop('kategori'); 
     }
 }
