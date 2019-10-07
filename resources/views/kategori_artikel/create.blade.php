@@ -8,6 +8,9 @@
                 <div class="card-header"> Tambah Kategori Artikel</div>
 
                 <div class="card-body">
+                <form method="post"action="{!! route('kategori_artikel.store') !!}">
+                @include('kategori_artikel.from')
+                </form>
                 
                 </div>
              </div>

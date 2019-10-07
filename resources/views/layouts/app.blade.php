@@ -33,8 +33,12 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
-
+                    @auth
+                    <li class="nav-item">
+                                <a class="nav-link" href="{{ route('kategori_artikel.index') }}">{{ __('Kategori_Artikel') }}</a>
+                            </li>
                     </ul>
+                    @endauth
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">

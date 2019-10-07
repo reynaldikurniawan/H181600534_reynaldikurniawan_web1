@@ -9,7 +9,7 @@
                 <div class="card-header"> List Kategori Artikel</div>
 
                 <div class="card-body">
-                
+            
                 <table border="1">
     <tr>
     <td>ID</td>
