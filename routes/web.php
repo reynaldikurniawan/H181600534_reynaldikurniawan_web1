@@ -35,8 +35,13 @@ Route::get('/kategori_galeri/create','KategoriGaleriController@create')->name('k
 Route::post('/kategori_galeri','KategoriGaleriController@store')->name('kategori_galeri.store');
 Route::get('/kategori_galeri/{id}','KategoriGaleriController@show')->name('kategori_galeri.show');
 
-Route::get('/kategori_galeri','KategoriPengumumanController@index')->name('kategori_pengumuman.index');
-Route::get('/kategori_galeri/create','KategoriPengumumanController@create')->name('kategori_pengumuman.create');
-Route::post('/kategori_galeri','KategoriPengumumanController@store')->name('kategori_pengumuman.store');
-Route::get('/kategori_galeri/{id}','KategoriPengumumanController@show')->name('kategori_pengumuman.show');
+Route::get('/kategori_pengumuman','KategoriPengumumanController@index')->name('kategori_pengumuman.index');
+Route::get('/kategori_pengumuman/create','KategoriPengumumanController@create')->name('kategori_pengumuman.create');
+Route::post('/kategori_pengumuman','KategoriPengumumanController@store')->name('kategori_pengumuman.store');
+Route::get('/kategori_pengumuman/{id}','KategoriPengumumanController@show')->name('kategori_pengumuman.show');
+
+Route::get('/artikel','ArtikelController@index')->name('artikel.index');
+Route::get('/artikel/create','ArtikelController@create')->name('artikel.create');
+Route::post('/artikel','ArtikelController@store')->name('artikel.store');
+Route::get('/artikel/{id}','ArtikelController@show')->name('artikel.show');
 
