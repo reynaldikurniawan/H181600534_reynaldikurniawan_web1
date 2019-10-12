@@ -28,7 +28,7 @@
     <td>{!! $item->users_id !!}</td>
     <td>{!! $item->created_at->format('d/M/Y H:i:s') !!}</td>
     <td>
-        <a href="(!! route('KategoriPengumuman',[$item->id]) !!)">Lihat</a>
+        <a href="(!! route('pengumuman.show',[$item->id]) !!)">Lihat</a>
     </td>
     </tr>
 

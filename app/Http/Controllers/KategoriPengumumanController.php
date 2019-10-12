@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\KategoriPengumuman;
 
 class KategoriPengumumanController extends Controller
 {
@@ -15,7 +16,7 @@ class KategoriPengumumanController extends Controller
 
     public function show($id){
         
-        $KategoriArtikel=KategoriArtikel::find('$id');
+        $KategoriArtikel=KategoriArtikel::find($id);
 
         return view('kategori_pengumuman.show',compact('KategoriPengumuman'));
     }

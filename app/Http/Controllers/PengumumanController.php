@@ -17,7 +17,7 @@ class PengumumanController extends Controller
 
     public function show($id){
         
-        $Pengumuman=Pengumuman::find('$id');
+        $Pengumuman=Pengumuman::find($id);
 
         return view('pengumuman.show',compact('Pengumuman'));
     }

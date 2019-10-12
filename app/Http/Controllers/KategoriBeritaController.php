@@ -16,7 +16,7 @@ class KategoriBeritaController extends Controller
 
     public function show($id){
         
-        $KategoriBerita=KategoriBerita::find('$id');
+        $KategoriBerita=KategoriBerita::find($id);
 
         return view('kategori_berita.show',compact('KategoriBerita'));
     }

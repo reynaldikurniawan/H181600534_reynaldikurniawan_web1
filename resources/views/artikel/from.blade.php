@@ -20,7 +20,7 @@
 
                             <div class="col-md-6">
                         
-                                {!! Form::select('kategori_artikel_id',$KategoriArtikel,null,["class"=>"form-control @error('kategori_artikel_id') is-invalid @enderror","required"]); !!}
+                                {!! Form::select('kategori_artikel_id',$KategoriArtikel,null,["class"=>"form-control","required"]); !!}
                                 @error('kategori_artikel_id')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -32,10 +32,10 @@
 
                         <div class="form-group row">
                             <label for="isi" class="col-md-4 col-form-label text-md-right">{{ __('isi') }}</label>
-
+                              
                             <div class="col-md-6">
-                                <input id="isi" type="text" class="form-control @error('isi') is-invalid @enderror" name="isi" value="{{ old('isi') }}" required ="isi" autofocus>
-
+                               
+                                {!! Form::textarea('isi',null['class'=>'form-control']); !!}
                                 @error('isi')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
